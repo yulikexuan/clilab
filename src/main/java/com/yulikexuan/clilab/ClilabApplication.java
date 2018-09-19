@@ -1,12 +1,16 @@
+//: com.yulikexuan.clilab.ClilabApplication.java
+
+
 package com.yulikexuan.clilab;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+import com.yulikexuan.clilab.commands.GreetingCommand;
+
+
 public class ClilabApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ClilabApplication.class, args);
+        new GreetingCommand().run();
     }
-}
+
+}///::~
